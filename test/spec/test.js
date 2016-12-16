@@ -56,5 +56,9 @@
             expect(convertIntToRoman(1)).toBe('I');
         });
          
+         it('Convert 2 to II', function () {
+            expect(convertIntToRoman(2)).toBe('II');
+        });
+         
      });
 })();
