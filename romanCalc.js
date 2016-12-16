@@ -63,6 +63,10 @@ function convertIntToRoman(num) {
         }
         val = val.replace('IIII', 'IV');
         val = val.replace('XXXX', 'XL');
+        val = val.replace('CCCC', 'CD');
+        val = val.replace('VIV', 'IX');
+        val = val.replace('LXL', 'XC');
+        val = val.replace('DCD', 'CM');
     }
 
     return val;

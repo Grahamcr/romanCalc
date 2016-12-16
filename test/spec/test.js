@@ -124,5 +124,12 @@
             expect(convertIntToRoman(44)).toBe('XLIV');
         });
          
+        it('Convert 9 to IX', function () {
+            expect(convertIntToRoman(9)).toBe('IX');
+        });
+         
+         
+         
+         
      });
 })();
