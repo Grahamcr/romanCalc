@@ -17,9 +17,13 @@ function romanNumSubtract(num1, num2) {
 
 function convertRomanToInt(num) {
     var val = 0;
-    if(num.length == 1) {
+    if(num.indexOf('V') > -1 && num.indexOf('I') > -1) {
+        val = 4;
+    }
+    else if(num.length == 1) {
         val = num === "I" ? 1 : 5;
-    }else {
+    }
+    else {
         val = num.length;
     }
     return val;

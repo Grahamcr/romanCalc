@@ -36,5 +36,9 @@
             expect(convertRomanToInt('V')).toBe(5);
         });
         
+        it('Convert IV to 4', function () {
+            expect(convertRomanToInt('IV')).toBe(4);
+        });
+        
     });
 })();
