@@ -61,9 +61,8 @@ function convertIntToRoman(num) {
                 break;
             }
         }
-        
         val = val.replace('IIII', 'IV');
-        
+        val = val.replace('XXXX', 'XL');
     }
 
     return val;

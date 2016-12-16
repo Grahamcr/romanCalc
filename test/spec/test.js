@@ -115,5 +115,14 @@
         it('Convert 14 to XIV', function () {
             expect(convertIntToRoman(14)).toBe('XIV');
         });
+         
+        it('Convert 24 to XXIV', function () {
+            expect(convertIntToRoman(24)).toBe('XXIV');
+        });
+         
+        it('Convert 44 to XLIV', function () {
+            expect(convertIntToRoman(44)).toBe('XLIV');
+        });
+         
      });
 })();
