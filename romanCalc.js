@@ -1,17 +1,13 @@
 function romanNumAdd(num1, num2) {
     
-    var val = num1.concat(num2);
-    if(val === "IIII") {
-        val = "IV";
-    }
-    return val;
+    return convertIntToRoman(convertRomanToInt(num1) + convertRomanToInt(num2));
       
 };
 
 
 function romanNumSubtract(num1, num2) {
     
-    return num1.replace(num2, "");
+   return convertIntToRoman(convertRomanToInt(num1) - convertRomanToInt(num2));
       
 };
 
