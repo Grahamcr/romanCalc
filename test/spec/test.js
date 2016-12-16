@@ -40,5 +40,9 @@
             expect(convertRomanToInt('IV')).toBe(4);
         });
         
+        it('Convert VI to 6', function () {
+            expect(convertRomanToInt('VI')).toBe(6);
+        });
+        
     });
 })();
