@@ -64,5 +64,9 @@
             expect(convertIntToRoman(5)).toBe('V');
         });
          
+        it('Convert 6 to VI', function () {
+            expect(convertIntToRoman(6)).toBe('VI');
+        });
+         
      });
 })();
