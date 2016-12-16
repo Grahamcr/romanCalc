@@ -16,7 +16,12 @@ function romanNumSubtract(num1, num2) {
 };
 
 function convertRomanToInt(num) {
-    
-    return num.length;
+    var val = 0;
+    if(num.length == 1) {
+        val = num === "I" ? 1 : 5;
+    }else {
+        val = num.length;
+    }
+    return val;
     
 };

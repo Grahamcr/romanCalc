@@ -32,5 +32,9 @@
             expect(convertRomanToInt('II')).toBe(2);
         });
         
+        it('Convert V to 5', function () {
+            expect(convertRomanToInt('V')).toBe(5);
+        });
+        
     });
 })();
