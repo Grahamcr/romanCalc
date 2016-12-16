@@ -27,5 +27,10 @@
         it('Convert I to 1', function () {
             expect(convertRomanToInt('I')).toBe(1);
         });
+        
+        it('Convert II to 2', function () {
+            expect(convertRomanToInt('II')).toBe(2);
+        });
+        
     });
 })();

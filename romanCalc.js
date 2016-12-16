@@ -17,6 +17,6 @@ function romanNumSubtract(num1, num2) {
 
 function convertRomanToInt(num) {
     
-    return 1;
+    return num.length;
     
 };
