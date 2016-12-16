@@ -64,6 +64,18 @@
             expect(convertRomanToInt('XLIV')).toBe(44);
         });
         
+        it('Convert XCVIII to 98', function () {
+            expect(convertRomanToInt('XCVIII')).toBe(98);
+        });
+        
+        it('Convert DCCCXC to 890', function () {
+            expect(convertRomanToInt('DCCCXC')).toBe(890);
+        });
+        
+        it('Convert MDCCC to 1800', function () {
+            expect(convertRomanToInt('MDCCC')).toBe(1800);
+        });
+        
     });
     
      describe('Convert Integer to Roman Numeral', function () {
