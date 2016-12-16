@@ -21,6 +21,10 @@
             expect(romanNumAdd('I','III')).toBe('IV');
         });
         
+        it('Addition of I to IV', function () {
+            expect(romanNumAdd('I','IV')).toBe('V');
+        });
+        
     });
     
     describe('Convert Roman Numberal to Integer', function () {
