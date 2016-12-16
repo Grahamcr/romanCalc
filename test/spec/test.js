@@ -111,5 +111,9 @@
         it('Convert 12 to XII', function () {
             expect(convertIntToRoman(12)).toBe('XII');
         });
+        
+        it('Convert 14 to XIV', function () {
+            expect(convertIntToRoman(14)).toBe('XIV');
+        });
      });
 })();
