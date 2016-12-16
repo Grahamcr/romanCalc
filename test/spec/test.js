@@ -1,8 +1,13 @@
 (function () {
     'use strict';
     describe('Test for Roman Calculator Fuction', function () {
-        it('Simple Start Test', function () {
-            expect(romanCalc('i','i')).toBe('ii');
+        it('Simple Addition of I', function () {
+            expect(romanNumAdd('I','I')).toBe('II');
         });
+        
+        it('Simple Subtraction of I', function () {
+            expect(romanNumSubtract('II','I')).toBe('I');
+        });
+        
     });
 })();

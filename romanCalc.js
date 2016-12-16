@@ -1,5 +1,12 @@
-function romanCalc(num1, num2) {
+function romanNumAdd(num1, num2) {
     
-    return 'ii';
+    return 'II';
+      
+};
+
+
+function romanNumSubtract(num1, num2) {
+    
+    return 'I';
       
 };
