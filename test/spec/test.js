@@ -17,10 +17,15 @@
             expect(romanNumSubtract('III','I')).toBe('II');
         });
         
-        
         it('Addition of I to III', function () {
             expect(romanNumAdd('I','III')).toBe('IV');
         });
         
+    });
+    
+    describe('Convert Roman Numberal to Integer', function () {
+        it('Convert I to 1', function () {
+            expect(convertRomanToInt('I')).toBe(1);
+        });
     });
 })();
