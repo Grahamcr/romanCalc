@@ -56,6 +56,10 @@
             expect(convertRomanToInt('VII')).toBe(7);
         });
         
+        it('Convert XI to 11', function () {
+            expect(convertRomanToInt('XI')).toBe(11);
+        });
+        
     });
     
      describe('Convert Integer to Roman Numeral', function () {
@@ -82,6 +86,10 @@
          
         it('Convert 7 to VII', function () {
             expect(convertIntToRoman(7)).toBe('VII');
+        });
+         
+        it('Convert 10 to X', function () {
+            expect(convertIntToRoman(10)).toBe('X');
         });
      });
 })();

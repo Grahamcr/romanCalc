@@ -15,21 +15,20 @@ function convertRomanToInt(num) {
     var val = 0;
     var valMap = {
         "I": 1,
-        "V": 5
+        "V": 5, 
+        "X": 10
     }
-    var beginMinus = false;
-    
+    var lastValue = 0;
     for(var i = num.length-1; i >=0; i--) {
         var char = num[i];
-        if(!beginMinus) {
-            val += valMap[char];    
+  
+        if(lastValue > valMap[char]) {
+            val -= valMap[char];
         }
         else {
-            val -= valMap[char];
-        }   
-        if(char === 'V') {
-            beginMinus = true;
+            val += valMap[char];  
         }
+        lastValue = valMap[char];
     }
     
     return val;
@@ -39,6 +38,7 @@ function convertRomanToInt(num) {
 function convertIntToRoman(num) {
     var val = "";
     var charValues = [
+      {char: "X", value: 10},
       {char: "V", value: 5},
       {char: "I", value: 1}    
     ];
@@ -50,6 +50,7 @@ function convertIntToRoman(num) {
             if(num - obj.value >= 0) {
                 val = val.concat(obj.char);
                 num -= obj.value;
+                break;
             }
         }
         
