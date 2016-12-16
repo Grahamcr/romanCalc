@@ -25,6 +25,10 @@
             expect(romanNumAdd('I','IV')).toBe('V');
         });
         
+        it('Subtract I form IV', function () {
+            expect(romanNumSubtract('IV','I')).toBe('III');
+        });
+        
     });
     
     describe('Convert Roman Numberal to Integer', function () {
