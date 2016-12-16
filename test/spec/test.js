@@ -60,6 +60,10 @@
             expect(convertRomanToInt('XI')).toBe(11);
         });
         
+        it('Convert XLIV to 44', function () {
+            expect(convertRomanToInt('XLIV')).toBe(44);
+        });
+        
     });
     
      describe('Convert Integer to Roman Numeral', function () {
