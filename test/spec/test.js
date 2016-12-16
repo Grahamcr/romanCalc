@@ -107,5 +107,9 @@
         it('Convert 10 to X', function () {
             expect(convertIntToRoman(10)).toBe('X');
         });
+         
+        it('Convert 12 to XII', function () {
+            expect(convertIntToRoman(12)).toBe('XII');
+        });
      });
 })();

@@ -42,6 +42,10 @@ function convertRomanToInt(num) {
 function convertIntToRoman(num) {
     var val = "";
     var charValues = [
+      {char: "M", value: 1000},
+      {char: "D", value: 500},
+      {char: "C", value: 100},    
+      {char: "L", value: 50},  
       {char: "X", value: 10},
       {char: "V", value: 5},
       {char: "I", value: 1}    
