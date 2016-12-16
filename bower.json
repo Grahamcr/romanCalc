@@ -1,0 +1,15 @@
+{
+  "name": "romanCalc",
+  "description": "Test program for programming exercise",
+  "main": "",
+  "license": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jasmine-core": "jasmine#^2.5.2"
+  }
+}
