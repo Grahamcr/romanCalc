@@ -56,8 +56,12 @@
             expect(convertIntToRoman(1)).toBe('I');
         });
          
-         it('Convert 2 to II', function () {
+        it('Convert 2 to II', function () {
             expect(convertIntToRoman(2)).toBe('II');
+        });
+         
+        it('Convert 5 to V', function () {
+            expect(convertIntToRoman(5)).toBe('V');
         });
          
      });

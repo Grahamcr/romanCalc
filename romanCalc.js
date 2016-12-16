@@ -42,8 +42,24 @@ function convertRomanToInt(num) {
 
 function convertIntToRoman(num) {
     var val = "";
-    for(var i = 0; i < num; i++) {
-        val = val.concat("I");
+    
+    var chars = ["V", "I"];
+    var values = [5, 1];
+    
+    while(num > 0) {
+        for(var i = 0; i < values.length; i++) {
+            console.log("number is " + num + " key value is: " + values[i]);
+            if(num - values[i] >= 0) {
+                val = val.concat(chars[i]);
+                num -= values[i];
+                console.log("number is " + num);
+            }
+        }
+        
     }
+    
+    
+    
+    
     return val;
 };
