@@ -135,4 +135,14 @@
          
          
      });
+    
+    describe('Test convering to and from roman numerals between 1 and 3999', function () {
+        it('Convert roman numerals 1 to 3999', function () {
+            for(var i = 1; i < 4000; i++) {
+                expect(convertRomanToInt(convertIntToRoman(i))).toBe(i);
+            }
+            
+        });
+        
+    });
 })();
