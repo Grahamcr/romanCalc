@@ -128,6 +128,9 @@
             expect(convertIntToRoman(9)).toBe('IX');
         });
          
+        it('Convert 890 to DCCCXC', function () {
+            expect(convertIntToRoman(890)).toBe('DCCCXC');
+        });
          
          
          
