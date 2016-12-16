@@ -49,4 +49,12 @@
         });
         
     });
+    
+     describe('Convert Integer to Roman Numeral', function () {
+         
+        it('Convert 1 to I', function () {
+            expect(convertIntToRoman(1)).toBe('I');
+        });
+         
+     });
 })();

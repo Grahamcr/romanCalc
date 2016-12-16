@@ -39,3 +39,11 @@ function convertRomanToInt(num) {
     return val;
     
 };
+
+function convertIntToRoman(num) {
+    var val = "";
+    for(var i = 0; i < num; i++) {
+        val = val.concat("I");
+    }
+    return val;
+};
