@@ -7,6 +7,6 @@ function romanNumAdd(num1, num2) {
 
 function romanNumSubtract(num1, num2) {
     
-    return 'I';
+    return num1.replace(num2, "");
       
 };

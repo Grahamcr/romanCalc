@@ -13,5 +13,9 @@
             expect(romanNumAdd('I','II')).toBe('III');
         });
         
+        it('III Subtract I', function () {
+            expect(romanNumSubtract('III','I')).toBe('II');
+        });
+        
     });
 })();
