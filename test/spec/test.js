@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+
     describe('Test for Roman Calculator Fuction', function () {
         it('Simple Addition of I', function () {
             expect(romanNumAdd('I','I')).toBe('II');
@@ -137,6 +138,27 @@
         });
          
      });
+    
+    describe('Test mass conversion of all valid roman numerals 1 to 3999', function () {
+        it('Load valid roman numberals from JSON and test converison from roman to int', function (done) {
+            var allRoman = jQuery.getJSON("spec/roman.json", function (data) {
+                data.array.forEach(function (numeralPair) {
+                    expect(convertRomanToInt(numeralPair.roman)).toBe(numeralPair.int);
+                })
+                done();
+            });
+        });
+        
+         it('Load valid roman numberals from JSON and test converison from int to roman', function (done) {
+            var allRoman = jQuery.getJSON("spec/roman.json", function (data) {
+                data.array.forEach(function (numeralPair) {
+                    expect(convertIntToRoman(numeralPair.int)).toBe(numeralPair.roman);
+                })
+                done();
+            });
+        });
+        
+    });
     
     describe('Test convering to and from roman numerals between 1 and 3999', function () {
         it('Convert roman numerals 1 to 3999', function () {
