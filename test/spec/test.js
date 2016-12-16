@@ -44,5 +44,9 @@
             expect(convertRomanToInt('VI')).toBe(6);
         });
         
+        it('Convert VII to 7', function () {
+            expect(convertRomanToInt('VII')).toBe(7);
+        });
+        
     });
 })();

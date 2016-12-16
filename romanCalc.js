@@ -17,15 +17,25 @@ function romanNumSubtract(num1, num2) {
 
 function convertRomanToInt(num) {
     var val = 0;
-    if(num.indexOf('V') > -1 && num.indexOf('I') > -1) {
-        val = num.indexOf('V') > num.indexOf('I')? 4 : 6;
+    var valMap = {
+        "I": 1,
+        "V": 5
     }
-    else if(num.length == 1) {
-        val = num === "I" ? 1 : 5;
+    var beginMinus = false;
+    
+    for(var i = num.length-1; i >=0; i--) {
+        var char = num[i];
+        if(!beginMinus) {
+            val += valMap[char];    
+        }
+        else {
+            val -= valMap[char];
+        }   
+        if(char === 'V') {
+            beginMinus = true;
+        }
     }
-    else {
-        val = num.length;
-    }
+    
     return val;
     
 };
