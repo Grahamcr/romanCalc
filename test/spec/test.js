@@ -72,5 +72,8 @@
             expect(convertIntToRoman(4)).toBe('IV');
         });
          
+        it('Convert 7 to VII', function () {
+            expect(convertIntToRoman(7)).toBe('VII');
+        });
      });
 })();
