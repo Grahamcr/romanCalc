@@ -68,5 +68,9 @@
             expect(convertIntToRoman(6)).toBe('VI');
         });
          
+        it('Convert 4 to IV', function () {
+            expect(convertIntToRoman(4)).toBe('IV');
+        });
+         
      });
 })();

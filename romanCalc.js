@@ -56,6 +56,8 @@ function convertIntToRoman(num) {
             }
         }
         
+        val = val.replace('IIII', 'IV');
+        
     }
     
     
