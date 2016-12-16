@@ -1,6 +1,6 @@
 function romanNumAdd(num1, num2) {
     
-    return 'II';
+    return num1.concat(num2);
       
 };
 

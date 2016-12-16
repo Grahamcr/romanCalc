@@ -9,5 +9,9 @@
             expect(romanNumSubtract('II','I')).toBe('I');
         });
         
+        it('Addition of I to II', function () {
+            expect(romanNumAdd('I','II')).toBe('III');
+        });
+        
     });
 })();
