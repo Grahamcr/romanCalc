@@ -42,9 +42,6 @@ function convertRomanToInt(num) {
 
 function convertIntToRoman(num) {
     var val = "";
-    
-    var chars = ["V", "I"];
-    var values = [5, 1];
     var charValues = [
       {char: "V", value: 5},
       {char: "I", value: 1}    
@@ -63,9 +60,6 @@ function convertIntToRoman(num) {
         val = val.replace('IIII', 'IV');
         
     }
-    
-    
-    
-    
+
     return val;
 };
