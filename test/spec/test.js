@@ -132,7 +132,9 @@
             expect(convertIntToRoman(890)).toBe('DCCCXC');
         });
          
-         
+        it('Convert 1800 to MDCCC', function () {
+            expect(convertIntToRoman(1800)).toBe('MDCCC');
+        });
          
      });
     
